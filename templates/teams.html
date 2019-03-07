@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+        <h1>Teams</h1>
+        <ul class="list-group"></ul>
+        {% for team in teams%}
+            <li class="list-group-item"><a href="team/{{team.id}}"> {{team.title}}</a></li>
+        {% endfor %}
+
+{% endblock %}
